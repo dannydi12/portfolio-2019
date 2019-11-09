@@ -1,0 +1,40 @@
+.profile-pic {
+    margin: 0 auto;
+    margin-top: 25px;
+    display: block;
+    border-radius: 100%;
+}
+
+.profile {
+    text-align: center;
+}
+
+.posted-projects {
+    padding: 20px;
+    background-color: rgb(187, 187, 187);
+}
+
+.posted-projects > header > h2 {
+    text-align: center;
+}
+
+.post {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.project-pic {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.description {
+    padding: 15px;
+}
+
+.username {
+    /* color: rgb(63, 63, 245); */
+    font-weight: 800;
+}
