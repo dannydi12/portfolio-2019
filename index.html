@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap" rel="stylesheet">
+    <title>Daniel DiVenere | Portfolio</title>
 </head>
 
 <body>
     <main>
         <section class="profile">
             <header>
-                <img class="profile-pic" src="https://via.placeholder.com/250/1000" alt="">
-                <h1>Name</h1>
+                <img class="profile-pic" src="./images/profile.jpg" alt="It's me smiling surrounded by Teslas">
+                <h1>Daniel DiVenere</h1>
+                <p class="tagline">Fullstack Web Developer</p>
+                <button class="follow js-follow">Follow</button>
             </header>
 
-            <p>Bio</p>
-            <button>Follow</button>
-            <p>Languages I speak: etc etc</p>
+            <p class="bio">I have an unhealthy obsession with Elon Musk, I tend to impulsively learn new things for no
+                apparent reason,and I think Indie music is pretty cool. When I'm not busy building websites and tools, I
+                can be found writing songs and acting on TV.</p>
+            <p>Languages: HTML, CSS, Javascript<span>oh, also English and French</span></p>
+            <div class="profile-icons">
+                <a href="https://github.com/dannydi12" target="_blank"><img class="profile-icon"
+                        src="./images/github.svg" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/danieldivenere/" target="_blank"><img class="profile-icon"
+                        src="./images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="mailto:danieldivenere@gmail.com" target="_blank"><img class="profile-icon"
+                        src="./images/email.svg" alt="Email"></a>
+            </div>
         </section>
         <br>
         <section class="posted-projects">
@@ -28,37 +40,46 @@
                 <h2>Posted Projects</h2>
             </header>
             <div class="post">
+                <img class="project-pic" src="./images/quiz.png" alt="">
+                <div class="description">
+                    <div class="reactions"></div>
+                    <p><span class="username">@DanielDiVenere: </span>An online quiz app to test your knowledge of Elon
+                        Musk and his achievements. </p>
+                    <a href="https://dannydi12.github.io/quiz-app/">Live Link</a>
+                    <a href="https://github.com/dannydi12/quiz-app">Repo Link</a>
+                    <ul class="hashtags">
+                        <li class="hashtag">HTML</li>
+                        <li class="hashtag">CSS</li>
+                        <li class="hashtag">Javascript</li>
+                        <li class="hashtag">jQuery</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post">
                 <img class="project-pic" src="https://via.placeholder.com/400x300/1000" alt="">
                 <div class="description">
-                    <p><span class="username">@Username: </span>Project Description</p>
+                    <p><span class="username">@DanielDiVenere: </span>Project Description</p>
+                    <a href="#">Live Link</a>
+                    <a href="">Repo Link</a>
+                    <p>Language Icons</p>
+                </div>
+            </div>
+            </div>
+            <div class="post">
+                <img class="project-pic" src="https://via.placeholder.com/400x300/1000" alt="">
+                <div class="description">
+                    <p><span class="username">@DanielDiVenere: </span>Project Description</p>
                     <a href="#">Live Link</a>
                     <a href="#">Repo Link</a>
                     <p>Language Icons</p>
                 </div>
             </div>
-            <div class="post">
-                    <img class="project-pic" src="https://via.placeholder.com/400x300/1000" alt="">
-                    <div class="description">
-                        <p><span class="username">@Username: </span>Project Description</p>
-                        <a href="#">Live Link</a>
-                        <a href="#">Repo Link</a>
-                        <p>Language Icons</p>
-                    </div>
-                </div>
-            </div>
-            <div class="post">
-                    <img class="project-pic" src="https://via.placeholder.com/400x300/1000" alt="">
-                    <div class="description">
-                        <p><span class="username">@Username: </span>Project Description</p>
-                        <a href="#">Live Link</a>
-                        <a href="#">Repo Link</a>
-                        <p>Language Icons</p>
-                    </div>
-                </div>
             </div>
         </section>
-        
+
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

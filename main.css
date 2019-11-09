@@ -1,21 +1,108 @@
-.profile-pic {
-    margin: 0 auto;
-    margin-top: 25px;
-    display: block;
-    border-radius: 100%;
+/* Global */
+
+body {
+    background-color: #eeeeee;
+    color: #222831;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
+h1, h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #00adb5;
+    text-decoration-style: solid 5px;
+}
+
+/* Profile Section */
 .profile {
+    text-align: left;
+    padding: 10px 40px;
+    padding-top: 20px;
+}
+
+.profile-pic {
+    margin: 0 auto;
+    display: block;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+.profile header {
     text-align: center;
 }
 
+.profile h1 {
+    margin-bottom: 0px;
+}
+
+.profile p > span {
+    display: block;
+    font-size: 8px;
+}
+
+.tagline {
+    color: #393e46;
+    margin-top: 0px;
+}
+
+.bio {
+    line-height: 26px;
+    letter-spacing: normal;
+    word-spacing: 1px;
+    display: block;
+    margin: 0 auto;
+}
+
+.follow {
+    background-color: #00adb5;
+    color: #eeeeee;
+    padding: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #00858b;
+}
+
+.followed {
+    background-color: #00b570;
+}
+
+.followed:hover {
+    background-color: #00b570;
+}
+
+.profile-icons {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.profile-icon {
+    width: 25px;
+}
+
+
+/* Projects Section */
 .posted-projects {
     padding: 20px;
-    background-color: rgb(187, 187, 187);
+    background-color: #f3f3f3;
 }
 
 .posted-projects > header > h2 {
     text-align: center;
+    margin-top: 0px;
 }
 
 .post {
@@ -35,6 +122,26 @@
 }
 
 .username {
-    /* color: rgb(63, 63, 245); */
+    /* color: #3e64ff; */
     font-weight: 800;
+}
+
+.hashtags {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+}
+
+.hashtag {
+    background-color: #393e46;
+    color: #eeeeee;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.hashtag::before {
+    content: "#";
 }
