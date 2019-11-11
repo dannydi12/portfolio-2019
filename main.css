@@ -4,7 +4,7 @@ body {
     background-color: #eeeeee;
     color: #222831;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h1, h2 {
@@ -14,19 +14,30 @@ h1, h2 {
 
 a {
     color: #00adb5;
-    text-decoration-style: solid 5px;
+    text-decoration: none;
+    ;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Profile Section */
+
 .profile {
     text-align: left;
     padding: 10px 40px;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 .profile-pic {
-    margin: 0 auto;
-    display: block;
     border-radius: 100%;
     width: 250px;
     height: 250px;
@@ -40,7 +51,7 @@ a {
     margin-bottom: 0px;
 }
 
-.profile p > span {
+.profile>p>span {
     display: block;
     font-size: 8px;
 }
@@ -52,10 +63,10 @@ a {
 
 .bio {
     line-height: 26px;
-    letter-spacing: normal;
-    word-spacing: 1px;
-    display: block;
-    margin: 0 auto;
+}
+
+.languages {
+    align-self: flex-start;
 }
 
 .follow {
@@ -93,14 +104,14 @@ button:hover {
     width: 25px;
 }
 
-
 /* Projects Section */
+
 .posted-projects {
     padding: 20px;
     background-color: #f3f3f3;
 }
 
-.posted-projects > header > h2 {
+.posted-projects>header>h2 {
     text-align: center;
     margin-top: 0px;
 }
@@ -108,7 +119,9 @@ button:hover {
 .post {
     background-color: white;
     border-radius: 10px;
+    margin: 0 auto;
     margin-bottom: 40px;
+    max-width: 800px;
 }
 
 .project-pic {
@@ -117,12 +130,29 @@ button:hover {
     border-top-right-radius: 10px;
 }
 
+.project-links {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #eeeeee;
+}
+
+.project-links>a {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.live-link {
+    border-right: 1px solid #eeeeee;
+}
+
 .description {
     padding: 15px;
 }
 
 .username {
-    /* color: #3e64ff; */
     font-weight: 800;
 }
 
@@ -144,4 +174,26 @@ button:hover {
 
 .hashtag::before {
     content: "#";
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: #222831;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+}
+
+.emoji {
+    font-size: 20px;
+}
+
+@media (min-width: 900px) {
+    .profile {
+        max-width: 700px;
+    }
 }

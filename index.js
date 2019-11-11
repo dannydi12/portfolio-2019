@@ -1,6 +1,6 @@
 function handleFollowClick() {
     $('.js-follow').click(function (event) {
-        if($(this).text() == 'Following') {
+        if ($(this).text() == 'Following') {
             $(this).text('Follow')
             $(this).removeClass('followed');
         }
