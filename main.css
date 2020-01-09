@@ -95,6 +95,7 @@ button:hover {
 .profile-icons {
     display: flex;
     margin-top: 25px;
+    margin-bottom: 20px;
     width: 100%;
     justify-content: space-around;
 }
